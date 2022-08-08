@@ -1,0 +1,132 @@
+h1,h3 {
+	text-align: center;
+	transition: all .5s;
+	cursor: default;
+}
+
+h1:hover,h3:hover {
+	color: blueviolet;}
+
+.robots {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.head, 
+.leftHand, 
+.torso, 
+.rightHand, 
+.leftLeg, 
+.rightLeg {
+	 background-color: #5f93e8;
+	 cursor: pointer;
+}
+
+.head {
+	width: 200px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 100px 100px 0px 0px;
+	transition: all 1s;
+	margin-bottom: 10px;
+}
+
+.eyes {
+	display: flex;
+}
+
+.head:hover {
+	transform: translate(50px);
+}
+
+.lefteye , .righteye {
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: white;
+}
+
+.lefteye{
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+
+.righteye {
+	position: relative;
+	top: 100px;
+	left: 120px;
+}
+
+.UpperBody {
+	display: flex;
+	width: 300px;
+	height: 190px;
+}
+
+.leftHand,.rightHand {
+	margin-top: 10px;
+	width: 50px;
+	height: 130px;
+	border-radius: 90px;
+	transition: all .8s;
+	display: flex;
+}
+
+.leftHand {
+ 	margin-right: 10px;
+}
+
+.rightHand {
+	margin-left: 10px;
+}
+
+.torso {
+	width: 200px;
+	height: 210px;
+	border-radius: 10px 10px 50px 50px;
+	transition: all 1s;
+}
+
+.leftHand:hover {
+	transform: translate(-5px , 20px);
+}
+
+.rightHand:hover {
+	transform: translate(5px , 20px);
+}
+
+.torso:hover {
+	transform: scale(.9);
+}
+
+.LowerBody {
+	width: 300px;
+	height: 95px;
+	display: flex;
+}
+
+.leftLeg, .rightLeg{
+	width: 50px;
+	height: 130px;
+	border-radius: 10px;
+	transition: all 1s;
+	margin-bottom: 100px;
+}
+
+.leftLeg {
+	margin-left: 90px;
+}
+
+.rightLeg {
+	margin-left: 20px;
+}
+
+.leftLeg:hover {
+	transform: rotate(15deg);
+}
+
+.rightLeg:hover {
+	transform: rotate(-15deg);
+}
